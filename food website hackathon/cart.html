@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./css/style_cart.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette&display=swap">
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+    <title>firebase Cart</title>
+</head>
+<body>
+   <div id="top">
+       <h1 class="logo">FOOD LION</h1>
+       <img class="cart-icon cart-toggle" src="https://w7.pngwing.com/pngs/1022/32/png-transparent-shopping-cart-icon-shopping-cart-logo-icon-shopping-cart-label-coffee-shop-shopping-mall.png" alt="cart">
+       <span class="totalitems"></span>
+       <a href="userlogin.html"><button >logout</button></a>
+   </div>
+
+ <div class="first"></div>
+<div class="menu" id="menu">
+    <h1>fast food items</h1>
+        <div class="prim"></div>
+        <div class="bgfix first-bg"></div>
+    
+    <h1>Pakistani food</h1>
+        <div class="secondi items"></div>
+        <div class="bgfix second-bg"></div>
+   
+    <h1>Chines food</h1>
+        <div class="contorni items"></div>
+        <div class="bgfix third-bg"></div>
+   
+    
+     <h1>Indian food</h1>
+     <div class="dolci items"></div>
+   
+</div>   
+
+<div class="cart-container">
+    <table class="cart">
+        <th>Product</th>
+        <th colspan="2">Price</th>
+    </table>
+    <table><tr><td class="total">Total</td></tr></table>
+    <div class="send-order">Send Order</div>
+</div>
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+
+
+
+
+    <script src="./js/cart.js"></script>
+    <script src="./js/firebase.js"></script>
+</body>
+</html>

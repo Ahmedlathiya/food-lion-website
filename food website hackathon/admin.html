@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette&display=swap">
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+    <title>firebase</title>
+</head>
+<body>
+  <!-- --------------------------NOTIFICATIONS------------------------ -->
+
+<h1 class="notifications fillall">Fill All Fields</h1>
+<h1 class="notifications inserted">Added Successfully</h1>
+<h1 class="notifications Updated">Updated Successfully</h1>
+
+
+
+
+
+ <!-- --------------------------Form Container------------------------ -->
+
+    <div class="container">
+        <a href="login.html"><button >logout</button></a>
+        <a href="order.html"><button >Order</button></a>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <h1 class="logo">FOOD LION</h1>
+            <select name="category" >
+                <option value="primi">pakistani</option>
+                <option value="secondi">Chiness</option>
+                <option value="contorni">Fast food</option>
+                <option value="dolci">Indian</option>
+            </select>
+            <input type="text" name="title" placeholder="Title">
+            <input type="number" name="price" placeholder="Price">
+            <input type="file" name="image">
+            <input type="submit" name="submit" value="Add">
+            
+        </form>
+    </div>
+
+
+     <!-- --------------------------Menu------------------------ -->
+
+     <div class="menu" id="menu">
+         <h1>Pakistani</h1>
+         <div class="primi"></div>
+         <h1>chiness</h1>
+         <div class="secondi"></div>
+         <h1>fast food</h1>
+         <div class="contorni"></div>
+         <h1>indian</h1>
+         <div class="dolci"></div>
+     </div>
+
+
+   
+
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    
+
+    <script src="./js/menu.js"></script>
+    <script src="./js/firebase.js"></script>
+</body>
+</html>
